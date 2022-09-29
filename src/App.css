@@ -4,6 +4,77 @@
   color: white;
 }
 
+.cv{
+  float: right;
+}
+
+.download-button {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 1;
+  cursor: pointer;
+ }
+ 
+ .download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #242a35;
+  border: solid 1px #e8e8e82d;
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ 
+ .download-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+ 
+ .download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #01e056;
+  border: solid 1px #01e0572d;
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ 
+ .download-button:hover .download {
+  transform: translateY(100%)
+ }
+ 
+ .download svg polyline,.download svg line {
+  animation: docs 1s infinite;
+ }
+ 
+ @keyframes docs {
+  0% {
+   transform: translateY(0%);
+  }
+ 
+  50% {
+   transform: translateY(-15%);
+  }
+ 
+  100% {
+   transform: translateY(0%);
+  }
+ }
+
 hr{
   margin: 1vh;
 }
@@ -16,7 +87,7 @@ body{
   text-align: center;
   justify-content: center;
   display: flex;
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 .card--formacao{
@@ -44,6 +115,7 @@ body{
   flex-direction: column;
   gap: 1vh;
   padding: 1vw 5vw;
+  margin-bottom: 5vh;
 }
 
 .info h5{
@@ -69,6 +141,7 @@ body{
   grid-template-columns: repeat(3, 1fr);
   gap: 2vw;
   padding: 1vw 5vw;
+  margin: 0 auto;
 }
 
 .header {
@@ -81,6 +154,7 @@ body{
 
 .title{
   text-align: left;
+  width: 100%;
 }
 
 .name{
@@ -88,8 +162,8 @@ body{
 }
 
 .card {
-  width: 45vw;
-  height: 80vh;
+  width: 65vw;
+  height: 85vh;
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 20px;
   transition: all 0.3s;
@@ -110,4 +184,46 @@ body{
 
 .card:hover {
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+@media screen and (max-width: 1400px) {
+  .languages{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 1vw 5vw;
+    margin: 0 auto;
+    padding-bottom: 5vh;
+  }
+
+  .card--language:nth-child(odd){
+    justify-content: flex-start;
+  }
+
+  .card--language:nth-child(even){
+    justify-content: flex-end;
+  }
+
+  .card{
+    height: fit-content;
+    margin-bottom: 10vh;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .header{
+    flex-direction: column;
+  }
+
+  .title{
+    text-align: center;
+  }
+
+  .card{
+    width: 80vw;
+  }
+
+  .header{
+    margin-bottom: 5vh;
+  }
 }
