@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  margin: 0;
+  padding: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+hr{
+  margin: 1vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background-color: black;
+}
+
+.App {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 10vh;
+}
+
+.card--formacao{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.card--language{
+  display: flex;
+  gap: 1vw;
+  background-color: rgb(0, 68, 68);
+  padding: 1vw;
+  border-radius: 10px;
+}
+
+.info{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.formacao{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding: 1vw 5vw;
+}
+
+.info h5{
+  font-size: 16px;
+}
+
+.info label{
+  font-size: 14px;
+}
+
+.card--language h3{
+  font-size: 1em;
+  text-align: left;
+}
+
+.card--language--header{
+  display: flex;
+  flex-direction: column;
+}
+
+.languages{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  padding: 1vw 5vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 1vw 2vw;
+  align-items: center;
+  gap: 2vw;
+}
+
+.title{
+  text-align: left;
+}
+
+.name{
+  font-size: 24px;
+}
+
+.card {
+  width: 45vw;
+  height: 80vh;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.card2:hover {
+  transform: scale(0.99);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
 }
