@@ -9,7 +9,7 @@ import {
 } from "react-icons/di";
 import { TbCertificate } from "react-icons/tb";
 import { GrNode } from "react-icons/gr";
-import { AiOutlineHtml5 } from "react-icons/ai";
+import { AiOutlineHtml5, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 // import PDF from 'Documento.pdf'
 
@@ -26,6 +26,13 @@ function App() {
             <div className="title">
               <h3 className="name">Marcos Paulo Muniz Cardoso</h3>
               <span>Estagiário CRG GESTÃO | Full-Stack </span>
+            </div>
+            <div className="socials">
+            <ul>
+              <li><a href="https://www.instagram.com/marcospmc__/"><AiOutlineInstagram size={32} /></a></li>
+              <li><a href="https://www.linkedin.com/in/marcos-cardoso-1931161b0/"><AiOutlineLinkedin size={32} /></a></li>
+              <li><a href="https://github.com/MarcosPMC1"><AiOutlineGithub size={32} /></a></li>
+            </ul>
             </div>
             <div className="cv">
               <a href="Documento.pdf" download='Documento.pdf'>
