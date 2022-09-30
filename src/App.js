@@ -11,23 +11,9 @@ import { TbCertificate } from "react-icons/tb";
 import { GrNode } from "react-icons/gr";
 import { AiOutlineHtml5 } from "react-icons/ai";
 
-// import PDF from './assets/Marcos_CardosoCV.pdf'
+// import PDF from 'Documento.pdf'
 
 function App() {
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch('Marcos_CardosoCV.pdf').then(response => {
-        response.blob().then(blob => {
-            // Creating new object of PDF file
-            const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'MarcosCardosoCV.pdf';
-            alink.click();
-        })
-    })
-}
 
   return (
     <div className="App">
@@ -42,7 +28,8 @@ function App() {
               <span>Estagiário CRG GESTÃO | Full-Stack </span>
             </div>
             <div className="cv">
-              <button class="download-button" onClick={onButtonClick}> 
+              <a href="Documento.pdf" download='Documento.pdf'>
+              <button class="download-button"> 
                 <div class="docs">
                   <svg
                     class="css-i6dzq1"
@@ -60,7 +47,7 @@ function App() {
                     <line y2="13" x2="8" y1="13" x1="16"></line>
                     <line y2="17" x2="8" y1="17" x1="16"></line>
                     <polyline points="10 9 9 9 8 9"></polyline>
-                  </svg>{" "}
+                  </svg>
                   Curriculo
                 </div>
                 <div class="download">
@@ -81,6 +68,7 @@ function App() {
                   </svg>
                 </div>
               </button>
+              </a>
             </div>
           </div>
           <div className="container">
