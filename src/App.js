@@ -82,33 +82,31 @@ function App() {
             <div className="formacao">
               <h3>Formação</h3>
               <div className="card--formacao">
-                <TbCertificate size={40} />
+                <TbCertificate size={50} />
                 <div className="info">
                   <h5>Curso técnico</h5>
-                  <label>UNINTER | Lógica de programação</label>
+                  <label>UNINTER<small> | Lógica de programação</small></label>
+                  <label className="curso">Lógica de programação</label>
                   <small>2018 - 2018 (20 horas)</small>
                 </div>
               </div>
               <hr />
               <div className="card--formacao">
-                <TbCertificate size={40} />
+                <TbCertificate size={50} />
                 <div className="info">
                   <h5>Curso técnico</h5>
-                  <label>
-                    ETEC Polivalente Americana | Análise e Desenvolvimento de
-                    Sistemas
-                  </label>
+                  <label>ETEC Polivalente Americana<small> | Análise e Desenvolvimento de Sistemas</small></label>
+                  <label className="curso">Análise e Desenvolvimento de Sistemas</label>
                   <small>2019 - 2021</small>
                 </div>
               </div>
               <hr />
               <div className="card--formacao">
-                <FaGraduationCap size={40} />
+                <FaGraduationCap size={50} />
                 <div className="info">
                   <h5>Ensino Superior</h5>
-                  <label>
-                    FATEC Americana | Análise e Desenvolvimento de Sistemas
-                  </label>
+                  <label>FATEC Americana<small> | Análise e Desenvolvimento de Sistemas </small></label>
+                  <label className="curso">Análise e Desenvolvimento de Sistemas</label>
                   <small>2022 - 2024</small>
                 </div>
               </div>

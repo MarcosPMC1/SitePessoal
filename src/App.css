@@ -102,6 +102,7 @@ body{
   background-color: rgb(0, 68, 68);
   padding: 1vw;
   border-radius: 10px;
+  border: black solid 2px;
 }
 
 .info{
@@ -122,7 +123,12 @@ body{
   font-size: 16px;
 }
 
-.info label{
+.curso{
+  display: none;
+}
+
+.info label,
+.info label small{
   font-size: 14px;
 }
 
@@ -245,10 +251,12 @@ body{
 
   .card--language:nth-child(odd){
     justify-content: flex-start;
+    padding-left: 2vw;
   }
 
   .card--language:nth-child(even){
     justify-content: flex-end;
+    padding-right: 2vw;
   }
 
   .card{
@@ -264,5 +272,13 @@ body{
 
   .header{
     margin-bottom: 5vh;
+  }
+
+  .curso{
+    display: block;
+  }
+
+  .info label small{
+    display: none;
   }
 }
