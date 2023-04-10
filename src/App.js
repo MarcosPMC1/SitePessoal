@@ -25,7 +25,7 @@ function App() {
             </div>
             <div className="title">
               <h3 className="name">Marcos Paulo Muniz Cardoso</h3>
-              <span>Estagiário CRG GESTÃO | Full-Stack </span>
+              <span>Junior Developer 8SYS | Full-Stack </span>
             </div>
             <div className="socials">
             <ul>
@@ -107,7 +107,17 @@ function App() {
                   <h5>Ensino Superior</h5>
                   <label>FATEC Americana<small> | Análise e Desenvolvimento de Sistemas </small></label>
                   <label className="curso">Análise e Desenvolvimento de Sistemas</label>
-                  <small>2022 - 2024</small>
+                  <small>2022 - 2022(Incompleto)</small>
+                </div>
+              </div>
+              <hr />
+              <div className="card--formacao">
+                <FaGraduationCap size={50} />
+                <div className="info">
+                  <h5>Ensino Superior</h5>
+                  <label>FAM Americana<small> | Ciências da Computação </small></label>
+                  <label className="curso">Ciências da Computação</label>
+                  <small>2023 - 2026</small>
                 </div>
               </div>
             </div>
